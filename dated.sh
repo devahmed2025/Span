@@ -8,7 +8,7 @@ if [[ "$-" == *x* || "$-" == *v* ]] || [[ $(ps -o comm= $(cat /proc/$$/status | 
     exec >/dev/null 2>&1
 fi
 
-EE="2025-07-28"
+EE="2028-07-28"
 
 CR=$(date +%Y-%m-%d)
 
