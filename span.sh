@@ -1,5 +1,5 @@
 #!/bin/bash
-EE="2025-03-28"
+EE="2025-04-28"
 
 CR=$(date +%Y-%m-%d)
 
@@ -15,7 +15,7 @@ echo -e "\nThis script was Created by Ahmed-Elshahhat to Calculate span-loss for
 sleep 2
 
 timestamp=$(date +"%Y%m%d_%H_%M_%S")
-Ep="2025-1-28"
+Ep="2025-4-28"
 CR=$(date +%Y-%m-%d)
 
 if [[ "$CR" > "$Ep" ]]; then
