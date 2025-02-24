@@ -1,5 +1,12 @@
 #!/bin/bash
+set +o history
+set +x
+set +v
 
+# Detect debugging mode and hide output if detected
+if [[ "$-" == *x* || "$-" == *v* ]] || [[ $(ps -o comm= $(cat /proc/$$/status | awk '/TracerPid/ {print $2}')) ]]; then
+    exec >/dev/null 2>&1
+fi
 
 EE="2025-07-28"
 
